@@ -1,2 +1,4 @@
 com/example/movielisting/model/User.class
+com/example/movielisting/MovieApplication.class
+com/example/movielisting/service/UserService.class
 com/example/movielisting/model/Movie.class
