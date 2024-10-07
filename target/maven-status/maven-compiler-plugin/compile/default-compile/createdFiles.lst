@@ -1,4 +1,5 @@
 com/example/movielisting/service/MovieService.class
+com/example/movielisting/constants/MovieConstants.class
 com/example/movielisting/model/User.class
 com/example/movielisting/MovieApplication.class
 com/example/movielisting/service/UserService.class

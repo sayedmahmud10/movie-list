@@ -2,6 +2,7 @@ package com.example.movielisting;
 
 import  com.example.movielisting.service.*;
 import  com.example.movielisting.model.*;
+import com.example.movielisting.constants.MovieConstants;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -22,10 +23,7 @@ public class MovieApplication{
 
         public void run(){
                 Scanner scanner = new Scanner(System.in);
-                movieService.addMovie(new Movie("Inception", "Leonardo DiCaprio", "Sci-Fi", "2010", 160000000));
-                movieService.addMovie(new Movie("The Dark Knight", "Christian Bale", "Action", "2008", 185000000));
-                movieService.addMovie(new Movie("Interstellar", "Matthew McConaughey", "Sci-Fi", "2014", 165000000));
-                movieService.addMovie(new Movie("Titanic", "Leonardo DiCaprio", "Romance", "1997", 200000000));
+                MovieConstants.DEFAULT_MOVIES.forEach(movieService::addMovie);
 
                  while (programRunner) {
                             if (currentUser == null) {
