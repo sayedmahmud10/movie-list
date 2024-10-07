@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/rakib/movie-list/target/surefire/surefirebooter1958851015482756675.jar /home/rakib/movie-list/target/surefire 2024-10-07T10-47-04_811-jvmRun1 surefire14370221740068486663tmp surefire_013641246889819513249tmp"/>
+    <property name="sun.java.command" value="/home/rakib/movie-list/target/surefire/surefirebooter446772484558827432.jar /home/rakib/movie-list/target/surefire 2024-10-07T11-32-49_096-jvmRun1 surefire410859910709174853tmp surefire_06305463608264765254tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/rakib/movie-list/target/test-classes:/home/rakib/movie-list/target/classes:/home/rakib/.m2/repository/org/junit/jupiter/junit-jupiter/5.8.1/junit-jupiter-5.8.1.jar:/home/rakib/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.1/junit-jupiter-api-5.8.1.jar:/home/rakib/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/rakib/.m2/repository/org/junit/platform/junit-platform-commons/1.8.1/junit-platform-commons-1.8.1.jar:/home/rakib/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/rakib/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.1/junit-jupiter-params-5.8.1.jar:/home/rakib/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.1/junit-jupiter-engine-5.8.1.jar:/home/rakib/.m2/repository/org/junit/platform/junit-platform-engine/1.8.1/junit-platform-engine-1.8.1.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +27,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/home/rakib/movie-list/target/surefire/surefirebooter1958851015482756675.jar"/>
+    <property name="surefire.real.class.path" value="/home/rakib/movie-list/target/surefire/surefirebooter446772484558827432.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.12+7-Ubuntu-1ubuntu222.04"/>
     <property name="user.name" value="rakib"/>
@@ -55,6 +55,6 @@
   <testcase name="testShowUserDetails" classname="com.movielisting.service.UserServiceTest" time="0.002"/>
   <testcase name="testLoginExistingUser" classname="com.movielisting.service.UserServiceTest" time="0.002"/>
   <testcase name="testRegisterUser" classname="com.movielisting.service.UserServiceTest" time="0.001"/>
-  <testcase name="testSearchFavoriteMovies" classname="com.movielisting.service.UserServiceTest" time="0.002"/>
+  <testcase name="testSearchFavoriteMovies" classname="com.movielisting.service.UserServiceTest" time="0.003"/>
   <testcase name="testRemoveFavoriteMovie" classname="com.movielisting.service.UserServiceTest" time="0.001"/>
 </testsuite>
