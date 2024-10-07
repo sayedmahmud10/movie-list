@@ -4,7 +4,7 @@
 # Project Details:
 
     Java Version: 17.0.12
-    Build Tool: Maven (for dependency management and project build)
+    Build Tool: Maven (for dependency management and project build {version 3.6.3})
     Generated JAR: After building, the .jar file is located in the target directory.
     Testing Framework: JUnit 5 (JUnit Jupiter)
 
@@ -26,3 +26,4 @@
     If you'd like to run the application without Maven:
         java -jar target/MovieListingApp-1.0-SNAPSHOT.jar
  All unit tests are written using JUnit 5 and can be executed via Maven using the command:
+    mvn test
