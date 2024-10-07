@@ -47,7 +47,12 @@ public class MovieApplication{
                                 System.out.println("press 1 to log out ");
                                 System.out.println("Press 2 to search for movies ");
                                 System.out.println("Press 3 to see details of movie ");
-                                System.out.println("press 4 to Exit from application ");
+                                System.out.println("Press 4 to add a movie to favorites ");
+                                System.out.println("Press 5 to remove a movie from favorites ");
+                                System.out.println("Press 6 to see user details ");
+                                System.out.println("Press 7 to search favorite movies ");
+                                System.out.println("press 8 to Exit from application ");
+
 
                                 int choice = scanner.nextInt();
                                 scanner.nextLine();
@@ -82,6 +87,38 @@ public class MovieApplication{
 
                                           break;
                                        case 4:
+                                           System.out.print("Enter the title of the movie to add to favorites: ");
+                                           String titleToAdd = scanner.nextLine();
+                                           Optional<Movie> movieToAdd = movieService.getMovieDetails(titleToAdd);
+                                           movieToAdd.ifPresent(movie -> {
+                                               userService.addFavoriteMovie(currentUser, movie);
+                                               System.out.println(movie.getTitle() + " added to favorites.");
+                                           });
+                                           break;
+                                       case 5:
+                                           System.out.print("Enter the title of the movie to remove from favorites: ");
+                                           String titleToRemove = scanner.nextLine();
+                                           Optional<Movie> movieToRemove = movieService.getMovieDetails(titleToRemove);
+                                           movieToRemove.ifPresent(movie -> {
+                                               userService.removeFavoriteMovie(currentUser, movie);
+                                               System.out.println(movie.getTitle() + " removed from favorites.");
+                                           });
+                                           break;
+                                       case 6:
+                                            userService.showUserDetails(currentUser);
+                                            break;
+                                       case 7:
+                                            System.out.print("Enter title, cast, or category to search in favorites: ");
+                                            String searchQuery = scanner.nextLine();
+                                            List<Movie> foundFavoriteMovies = userService.searchFavoriteMovies(currentUser, searchQuery);
+                                            if (foundFavoriteMovies.isEmpty()) {
+                                                System.out.println("No favorite movies found matching your search.");
+                                            } else {
+                                                System.out.println("Found favorite movies:");
+                                                foundFavoriteMovies.forEach(movie -> System.out.println(movie.getTitle()));
+                                            }
+                                            break;
+                                       case 8:
                                             programRunner = false;
                                             System.out.println("Exiting the application. Goodbye!");
                                             break;
